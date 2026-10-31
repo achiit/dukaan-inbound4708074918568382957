@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dinesh Kirana Store, Milan Chauraha, Khanpur, Chunar, Mirzapur. Everyday groceries and household essentials at reasonable prices." />
+  <title>Dinesh Kirana Store | Khanpur</title>
+  <style>
+    :root{--navy:#102a43;--blue:#176b87;--cyan:#28c3d7;--ink:#183044;--muted:#64748b;--cream:#f7fbfc;--white:#fff;--line:#e3edf1;--green:#16865b}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy);font-size:1.08rem}.brand-mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:white;font-size:1.35rem}
+    nav{display:flex;gap:22px;align-items:center;font-size:.94rem;color:#385268}nav a:hover{color:var(--blue)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 19px;background:var(--blue);color:white;font-weight:700;border:0}.nav-cta:hover,.btn:hover{background:var(--navy)}
+    .hero{padding:82px 0 70px;background:radial-gradient(circle at 85% 20%,#d9f8fb 0,transparent 30%),linear-gradient(135deg,#edf9fb,#fff 60%)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}.eyebrow{display:inline-block;padding:7px 13px;border-radius:999px;background:#dff7fa;color:#12677b;font-weight:700;font-size:.82rem;letter-spacing:.03em}.hero h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.06;color:var(--navy);margin:18px 0}.hero h1 span{color:var(--blue)}.hero p{font-size:1.1rem;color:var(--muted);max-width:590px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn.secondary{background:white;color:var(--navy);border:1px solid var(--line)}.hero-art{min-height:330px;border-radius:28px;background:linear-gradient(145deg,#0f4560,#1599ae);padding:28px;display:flex;align-items:center;justify-content:center;box-shadow:0 22px 55px #0e607522;position:relative;overflow:hidden}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #ffffff35;border-radius:50%;width:290px;height:290px}.hero-art:after{width:390px;height:390px}.basket{position:relative;z-index:1;text-align:center;color:white}.basket .emoji{font-size:7rem;filter:drop-shadow(0 12px 12px #002b3c55)}.basket h2{margin:5px 0 0;font-size:1.5rem}.basket p{color:#d9f7fa;margin:3px 0}
+    section{padding:68px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 35px}.section-head h2{font-size:2rem;color:var(--navy);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:-25px;position:relative}.trust{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center;box-shadow:0 10px 25px #163c5210}.trust strong{display:block;color:var(--navy);font-size:1.15rem}.trust span{color:var(--muted);font-size:.9rem}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-panel{background:#e8f7f9;border-radius:24px;padding:35px}.about-panel .big-icon{font-size:4.2rem}.about h2{color:var(--navy);font-size:2rem;margin:0 0 12px}.about p{color:var(--muted)}.checklist{padding:0;list-style:none}.checklist li{margin:10px 0}.checklist li:before{content:'✓';color:var(--green);font-weight:800;margin-right:10px}
+    .products{background:#fff}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:23px 16px;text-align:center}.product .p-icon{font-size:2.5rem}.product h3{margin:10px 0 3px;color:var(--navy);font-size:1.05rem}.product p{margin:0;color:var(--muted);font-size:.88rem}
+    .promise{background:linear-gradient(135deg,var(--navy),#176b87);color:white;text-align:center}.promise h2{font-size:2rem;margin:0 0 10px}.promise p{color:#d8edf3;max-width:700px;margin:0 auto 22px}.promise .btn{background:var(--cyan);color:#07384a}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{background:white;border:1px solid var(--line);border-radius:20px;padding:27px}.contact-card h3{margin-top:0;color:var(--navy)}.contact-line{margin:13px 0;color:var(--muted)}.contact-line strong{color:var(--ink);display:block}.contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.contact-actions .btn{font-size:.9rem}.contact-actions .secondary{border:1px solid var(--line)}.map-placeholder{min-height:250px;border-radius:20px;background:linear-gradient(135deg,#dff5f7,#edf5f8);display:grid;place-items:center;text-align:center;padding:25px;color:var(--navy)}.map-placeholder .pin{font-size:3rem}
+    footer{background:#0b2032;color:#d8e6ed;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-row small{color:#a9bfcb}
+    @media(max-width:800px){nav{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:55px 0}.hero-art{min-height:260px}.product-grid{grid-template-columns:repeat(2,1fr)}.trust-row{grid-template-columns:1fr}.about-panel{order:2}}
+    @media(max-width:420px){.product-grid{grid-template-columns:1fr 1fr}.product{padding:18px 10px}.hero h1{font-size:2.55rem}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home"><span class="brand-mark">🛒</span><span>Dinesh Kirana Store</span></a>
+      <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#contact">Contact</a></nav>
+      <a class="nav-cta" href="https://wa.me/916388297130" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">20 YEARS OF TRUST IN KHANPUR</span>
+          <h1>Your everyday needs,<br><span>all in one store.</span></h1>
+          <p>Kirana Store of Khanpur — buy everyday groceries and household essentials at Dinesh Kirana Store. Quality products, reasonable prices and friendly service.</p>
+          <div class="hero-actions"><a class="btn" href="#products">Explore Products</a><a class="btn secondary" href="https://wa.me/916388297130" target="_blank" rel="noopener">Order on WhatsApp</a></div>
+        </div>
+        <div class="hero-art"><div class="basket"><div class="emoji">🛍️🥦</div><h2>Fresh • Daily • Essential</h2><p>Your trusted neighbourhood kirana store</p></div></div>
+      </div>
+    </section>
+
+    <div class="container trust-row" aria-label="Store highlights">
+      <div class="trust"><strong>20 Years</strong><span>Serving the Khanpur community</span></div>
+      <div class="trust"><strong>Everyday Essentials</strong><span>Groceries and household needs</span></div>
+      <div class="trust"><strong>Friendly Service</strong><span>A neighbourhood store you can trust</span></div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-panel"><div class="big-icon">🏪</div><h3>Local store. Everyday convenience.</h3><p>Located at Milan Chauraha, Khanpur, Chunar, Mirzapur.</p></div>
+        <div><h2>Welcome to Dinesh Kirana Store</h2><p>Owned by Dinesh Kumar, our store has been serving local customers for around 20 years. We aim to make daily shopping simple with useful grocery items and household essentials in one convenient place.</p><ul class="checklist"><li>Everyday grocery essentials</li><li>Quality products at reasonable prices</li><li>Convenient neighbourhood location</li><li>Helpful and friendly customer service</li></ul></div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-head"><h2>What You’ll Find Here</h2><p>Daily essentials for your kitchen and home. Availability may vary — contact the store to confirm an item.</p></div>
+        <div class="product-grid">
+          <article class="product"><div class="p-icon">🌾</div><h3>Daal</h3><p>Everyday pulses</p></article>
+          <article class="product"><div class="p-icon">🍚</div><h3>Chawal</h3><p>Rice and grains</p></article>
+          <article class="product"><div class="p-icon">🍬</div><h3>Chini</h3><p>Daily kitchen needs</p></article>
+          <article class="product"><div class="p-icon">🥔</div><h3>Aaloo</h3><p>Fresh vegetables</p></article>
+          <article class="product"><div class="p-icon">🧅</div><h3>Pyaj</h3><p>Fresh vegetables</p></article>
+          <article class="product"><div class="p-icon">🛢️</div><h3>Cooking Oil</h3><p>Cooking essentials</p></article>
+          <article class="product"><div class="p-icon">🧂</div><h3>Namak</h3><p>Pantry essentials</p></article>
+          <article class="product"><div class="p-icon">🧼</div><h3>Home Care</h3><p>Soap and daily-use items</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise"><div class="container"><h2>20 Years of Trust, One Neighbourhood Store</h2><p>Thank you to the people of Khanpur for being part of our journey. Visit us for your everyday grocery and household needs.</p><a class="btn" href="#contact">Get in Touch</a></div></section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head"><h2>Visit or Contact Us</h2><p>We’d be happy to help you with your daily shopping needs.</p></div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Dinesh Kirana Store</h3>
+            <div class="contact-line"><strong>Owner</strong>Dinesh Kumar</div>
+            <div class="contact-line"><strong>Address</strong>Milan Chauraha, Khanpur, Chunar, Mirzapur, Uttar Pradesh</div>
+            <div class="contact-line"><strong>Phone</strong><a href="tel:9621082996">9621082996</a> / <a href="tel:9278297130">9278297130</a></div>
+            <div class="contact-line"><strong>WhatsApp</strong><a href="https://wa.me/916388297130" target="_blank" rel="noopener">6388297130</a></div>
+            <div class="contact-line"><strong>Email</strong><a href="mailto:vermashivam8416@gmail.com">vermashivam8416@gmail.com</a></div>
+            <div class="contact-actions"><a class="btn" href="tel:9621082996">Call Store</a><a class="btn secondary" href="https://wa.me/916388297130" target="_blank" rel="noopener">WhatsApp</a></div>
+          </div>
+          <div class="map-placeholder"><div><div class="pin">📍</div><h3>Milan Chauraha, Khanpur</h3><p>Chunar, Mirzapur, Uttar Pradesh</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Milan+Chauraha+Khanpur+Chunar+Mirzapur" target="_blank" rel="noopener">Open in Google Maps</a></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-row"><strong>🛒 Dinesh Kirana Store</strong><small>© <span id="year">2026</span> Dinesh Kirana Store. All rights reserved.</small><small>Instagram: @Dinesh_kirana_store</small></div></footer>
+</body>
+</html>
